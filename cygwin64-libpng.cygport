@@ -1,0 +1,15 @@
+CROSS_HOST="x86_64-pc-cygwin"
+inherit cross
+
+NAME="cygwin64-libpng"
+VERSION=1.5.14
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="PNG library for Cygwin 64bit toolchain"
+DESCRIPTION="libpng is the official reference library for the Portable Network
+Graphics (PNG) image format."
+HOMEPAGE="http://libpng.sourceforge.net/"
+SRC_URI="mirror://sourceforge/libpng/libpng-${VERSION}.tar.xz"
+SRC_DIR="libpng-${VERSION}"
+
+MAKEOPTS+=" dist_man_MANS= "
